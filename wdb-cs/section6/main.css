@@ -1,0 +1,17 @@
+button {
+    background-color: royalblue;
+}
+h2 {
+    color: rgb(14, 106, 81);
+    background-color: navajowhite;
+}
+button {
+    color: magenta;
+}
+p {
+    background-color: olive;
+}
+body {
+    background-color: #0000008e;
+    /* background-color: #000; If all the hex values are in same color we can use short hand form*/ 
+}

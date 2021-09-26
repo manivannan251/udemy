@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Forms Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Forms Demo</h1>
+
+        <form action="/actions">
+                <button type="button">Just a button</button>
+                <p>
+                    <label for="username">Enter a username</label>
+                    <input type="text" placeholder="username" id="username" name="username">
+                </p>
+                <p>
+                    <label for="pass">Enter a password</label>
+                    <input type="password" placeholder="password" id="pass">
+                </p>
+                <p>
+                    <label for="date">Enter a date</label>
+                    <input type="date" id="date">
+                </p>
+                <p>
+                    <label for="em">Enter email</label>
+                    <input type="email" placeholder="email" id="em" name="email">
+                </p>
+                <button type="">Submit</button>
+                <input type="button" value="Submit">
+                
+
+        </form>
+        <form action="https://www.google.com/search">
+            <input type="search" name="q" id="gg">
+            <button>Search Google</button>
+        </form>
+        <h2>More inputs</h2>
+        <form action="/birds">
+            <input type="checkbox" name="agree_tos" id="tos">
+            <label for="tos"></label>
+            <button>Submit</button>
+        </form>
+        <form action="/tshirt">
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m">
+            <p>
+                <label for="meal">Please select entree</label>
+                <select name="meal" id="meal">
+                    <option value="veg">Veg</option>
+                    <option value="Fish" selected>Fish</option>
+                    <option value="Meat">Meat</option>
+                </select>
+            </p>
+            <p>
+                <label for="cheese">Amount of cheese</label>
+                <input type="range" name="ch_lvl" id="cheese" min="1" max="10" step="2">
+            </p>
+            <p>
+                <label for="requests">Any special requests</label>
+                <br>
+                <textarea name="Requests?" id="requests" cols="50" rows="10" placeholder="Enter requests"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+button {
+    font-size: 30px;
+}
+h1,h2 {
+    color: red;
+}
+nav {
+    background-color: black;
+}
+span {
+    background-color: crimson;
+}
+#signup {
+    background-color: black;
+    color: cornsilk;
+}
+.tag {
+    text-decoration: underline;
+    background-color: transparent;
+}
+a {
+    
+}
