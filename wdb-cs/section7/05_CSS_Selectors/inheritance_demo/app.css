@@ -1,15 +1,12 @@
 body {
     color: purple;
 }
-
-section {
-    color: aqua;
+h1 {
+    color: blue;
 }
-
 form {
-    color: greenyellow;
+    color: green;
 }
-
-button, input {
+input,button {
     color: inherit;
 }

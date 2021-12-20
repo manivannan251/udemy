@@ -7,9 +7,7 @@ h1,h2 {
 nav {
     background-color: black;
 }
-span {
-    background-color: crimson;
-}
+
 #signup {
     background-color: black;
     color: cornsilk;
@@ -18,6 +16,44 @@ span {
     text-decoration: underline;
     background-color: transparent;
 }
-a {
-    
+li a {
+    color: white;
+}
+h2 + button {
+    background-color: magenta;
+}
+footer > a {
+    color: rosybrown;
+}
+input[type="password"] {
+    color: greenyellow;
+}
+a[href*="google"]{
+    color: peru;
+}
+
+button:active {
+    background-color: green;
+}
+.post:nth-of-type(3n) {
+    background-color:gray;
+}
+h2::first-letter {
+    font-size: large;
+}
+p::first-line {
+    color: burlywood;
+}
+p::selection {
+    color: crimson;
+}
+.post button:hover {
+    background-color: red;
+}
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+button {
+    background-color: paleturquoise //!important;
 }
