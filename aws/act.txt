@@ -1,0 +1,6 @@
+iam user
+
+https://mani251-dev.signin.aws.amazon.com/console
+
+account-alias
+mani251-dev
