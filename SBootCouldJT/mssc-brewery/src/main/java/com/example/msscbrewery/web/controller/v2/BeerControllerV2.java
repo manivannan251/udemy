@@ -20,15 +20,18 @@ import com.example.msscbrewery.service.v2.BeerServiceV2;
 import com.example.msscbrewery.web.model.BeerDTO;
 import com.example.msscbrewery.web.model.v2.BeerDTOV2;
 
+import lombok.RequiredArgsConstructor;
+import lombok.val;
+import lombok.extern.slf4j.Slf4j;
+
 @RequestMapping("app/v2/beer")
+@RequiredArgsConstructor
+@Slf4j
 @RestController
 public class BeerControllerV2 {
 	
-	private final BeerServiceV2 beerServiceV2;
+	private final BeerServiceV2 beerServiceV2;	
 	
-	public BeerControllerV2(BeerServiceV2 beerServiceV2) {
-		this.beerServiceV2 = beerServiceV2;
-	}
 	
 	@GetMapping("/{beerId}")
 	public ResponseEntity<BeerDTOV2> getBeer(@PathVariable("beerId") UUID beerId) {
@@ -40,7 +43,8 @@ public class BeerControllerV2 {
 	
 	@PostMapping
 	public ResponseEntity saveBeer(@RequestBody BeerDTOV2 beer) {
-		BeerDTOV2 beerDTO = beerServiceV2.save(beer);
+		log.debug("Saving the beer");
+		val beerDTO = beerServiceV2.save(beer);
 		
 		HttpHeaders header = new HttpHeaders();
 		header.add("location", "app/v1/beer/"+beerDTO.getId());
